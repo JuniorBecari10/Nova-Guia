@@ -127,15 +127,15 @@ Canva
 
 let links = [
  newLink("https://www.youtube.com", "YouTube", "Resources/Images/Icons/youtube.png"),
- newLink("https://www.cmsp.ip.tv", "CMSP Web", "Resources/Images/Icons/cmsp.png"),
+ newLink("https://cmsp.ip.tv", "CMSP Web", "Resources/Images/Icons/cmsp.png"),
  newLink("https://www.instagram.com", "Instagram", "Resources/Images/Icons/instagram.png"),
- newLink("https://www.drive.google.com", "Google Drive", "Resources/Images/Icons/google-drive.png"),
+ newLink("https://drive.google.com", "Google Drive", "Resources/Images/Icons/google-drive.png"),
  newLink("https://www.github.com", "GitHub", "Resources/Images/Icons/github.png"),
- newLink("https://www.classroom.google.com", "Google Classroom", "Resources/Images/Icons/classroom.png"),
- newLink("https://www.gmail.com", "Gmail", "Resources/Images/Icons/gmail.png"),
+ newLink("https://classroom.google.com", "Google Classroom", "Resources/Images/Icons/classroom.png"),
+ newLink("https://gmail.com", "Gmail", "Resources/Images/Icons/gmail.png"),
  newLink("https://www.facebook.com", "Facebook", "Resources/Images/Icons/facebook.png"),
  newLink("https://www.messenger.com", "Messenger", "Resources/Images/Icons/messenger.png"),
- newLink("https://www.web.whatsapp.com", "WhatsApp Web", "Resources/Images/Icons/whatsapp.png"),
+ newLink("https://web.whatsapp.com", "WhatsApp Web", "Resources/Images/Icons/whatsapp.png"),
  newLink("https://www.canva.com", "Canva", "Resources/Images/Icons/canva.png"),
 ];
 
