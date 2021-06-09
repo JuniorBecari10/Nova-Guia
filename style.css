@@ -1,0 +1,127 @@
+@font-face {
+ font-family: "Pixel";
+ 
+ src: url("Resources/Fonts/Pixel.woff");
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Pixel", sans-serif;
+}
+
+body {
+ background-image: url("Resources/Images/Backgrounds/1.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+.link {
+ margin-top: 20px;
+ 
+ background-color: rgba(120, 120, 120, 0.5);
+ 
+ width: 95%;
+ 
+ margin-left: 50%;
+ transform: translateX(-50%);
+ 
+ border-radius: 2%;
+}
+
+.linknode {
+ display: inline-block;
+ 
+ cursor: pointer;
+ 
+ vertical-align: top;
+ 
+ background-color: rgba(100, 100, 100, 0.5);
+ 
+ width: 94px;
+ height: 100px;
+ 
+ margin: 10px;
+ padding: 5px;
+ 
+ border-radius: 2%;
+}
+
+.linknode:hover {
+ background-color: rgba(70, 70, 70, 0.5);
+}
+
+.linknode a {
+ text-decoration: none;
+ color: white;
+ 
+ font-size: 12px;
+ 
+ margin-top: 10px;
+}
+
+.linknode img {
+ width: 50px;
+}
+
+.card {
+ background-color: rgba(255,255,255,0.5);
+ background-opacity: 50%;
+ 
+ margin-left: 50%;
+ margin-top: 80px;
+ 
+ transform: translateX(-50%);
+ 
+ text-align: center;
+ 
+ width: 70%;
+ height: 520px;
+ 
+ border-radius: 2%;
+}
+
+.hour {
+ position: absolute;
+ padding: 10px;
+ 
+ text-align: center;
+ 
+ border-radius: 3%;
+ box-shadow: -10px 10px 10px rgba(0,0,0,0.5);
+ 
+ right: 10px;
+ top: 10px;
+ 
+ background-color: rgba(255,255,255,0.5);
+}
+
+div.frase {
+ padding : 10px 5px;
+ margin-top: 20px;
+ 
+ background-opacity: 50%;
+ background-color: rgba(100,100,100,0.5);
+ 
+ width: 90%;
+ 
+ margin-left: 50%;
+ transform: translateX(-50%);
+ 
+ border-radius: 3%;
+}
+
+.card h2 {
+ padding-top: 30px;
+}
+
+h2, h3 {
+ font-weight: normal;
+}
+
+@media screen and (max-width: 950px) {
+  .card {
+    margin-top: 110px;
+  }
+}
