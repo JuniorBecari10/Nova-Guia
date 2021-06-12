@@ -1,4 +1,4 @@
-const hour = document.getElementById("hour"); // Terminado: 08/05/2021 - 15:24
+const hour = document.getElementById("hour"); // Última Edição: 12/06/2021 - 10:00
 const date = document.getElementById("date");
 
 const saudacao = document.getElementById("saudacao");
@@ -14,7 +14,7 @@ function time() {
     var d = new Date();
 
     hour.innerHTML = (d.getHours() < 10 ? "0" : "") + d.getHours() + ":" + (d.getMinutes() < 10 ? "0" : "") + d.getMinutes() + ":" + (d.getSeconds() < 10 ? "0" : "") + d.getSeconds();
-    date.innerHTML = (d.getDate() < 10 ? "0" : "") + d.getDate() + "/" + (d.getMonth() < 10 ? "0" : "") + d.getMonth() + "/" + d.getFullYear();
+    date.innerHTML = (d.getDate() < 10 ? "0" : "") + d.getDate() + "/" + (d.getMonth() + 1 < 10 ? "0" : "") + (d.getMonth() + 1) + "/" + d.getFullYear();
 
     let hnow = d.getHours(); // hour now
 
@@ -126,17 +126,17 @@ Canva
 */
 
 let links = [
- newLink("https://www.youtube.com", "YouTube", "Resources/Images/Icons/youtube.png"),
- newLink("https://cmsp.ip.tv", "CMSP Web", "Resources/Images/Icons/cmsp.png"),
- newLink("https://www.instagram.com", "Instagram", "Resources/Images/Icons/instagram.png"),
+ newLink("https://youtube.com", "YouTube", "Resources/Images/Icons/youtube.png"),
+ newLink("https://cmspweb.ip.tv", "CMSP Web", "Resources/Images/Icons/cmsp.png"),
+ newLink("https://instagram.com", "Instagram", "Resources/Images/Icons/instagram.png"),
  newLink("https://drive.google.com", "Google Drive", "Resources/Images/Icons/google-drive.png"),
- newLink("https://www.github.com", "GitHub", "Resources/Images/Icons/github.png"),
+ newLink("https://github.com", "GitHub", "Resources/Images/Icons/github.png"),
  newLink("https://classroom.google.com", "Google Classroom", "Resources/Images/Icons/classroom.png"),
  newLink("https://gmail.com", "Gmail", "Resources/Images/Icons/gmail.png"),
- newLink("https://www.facebook.com", "Facebook", "Resources/Images/Icons/facebook.png"),
- newLink("https://www.messenger.com", "Messenger", "Resources/Images/Icons/messenger.png"),
+ newLink("https://facebook.com", "Facebook", "Resources/Images/Icons/facebook.png"),
+ newLink("https://messenger.com", "Messenger", "Resources/Images/Icons/messenger.png"),
  newLink("https://web.whatsapp.com", "WhatsApp Web", "Resources/Images/Icons/whatsapp.png"),
- newLink("https://www.canva.com", "Canva", "Resources/Images/Icons/canva.png"),
+ newLink("https://canva.com", "Canva", "Resources/Images/Icons/canva.png"),
 ];
 
 function newLink(link, name, icon) {
@@ -171,16 +171,3 @@ for (let ind in links) {
  
  divlinks.appendChild(link);
 }
-
-/*var getFavicon = function() {
-    var favicon = undefined;
-    var nodeList = document.getElementsByTagName("link");
-    for (var i = 0; i < nodeList.length; i++)
-    {
-        if ((nodeList[i].getAttribute("rel") == "icon")||(nodeList[i].getAttribute("rel") == "shortcut icon"))
-        {
-            favicon = nodeList[i].getAttribute("href");
-        }
-    }
-    return favicon;        
-}*/
