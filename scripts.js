@@ -1,4 +1,4 @@
-const hour = document.getElementById("hour"); // Última Edição: 12/06/2021 - 10:00
+const hour = document.getElementById("hour"); // Última Edição: 21/06/2021 - 17:57
 const date = document.getElementById("date");
 
 const saudacao = document.getElementById("saudacao");
