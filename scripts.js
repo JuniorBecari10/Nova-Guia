@@ -18,16 +18,16 @@ function time() {
 
     let hnow = d.getHours(); // hour now
 
-    if (hnow >= 6 && hnow <= 12)
+    if (hnow >= 0 && hnow <= 12)
      saudacao.innerHTML = "Bom dia, Boot.";
 
     if (hnow >= 12 && hnow <= 18)
      saudacao.innerHTML = "Boa tarde, Boot.";
  
-    if (hnow >= 18 || hnow >= 0 && hnow <= 6)
+    if (hnow >= 18)
      saudacao.innerHTML = "Boa noite, Boot.";
      
-     setTimeout(function() {time();}, 1000);
+     setTimeout(function () {time();}, 1000);
 }
 
 time();
@@ -69,16 +69,17 @@ var frases = [
  newFrase("O meu socorro vem do Senhor, que fez os céus e a terra.", "(Salmos 121:2)"),
  newFrase("Quem não ama não conhece a Deus, porque Deus é amor.", "(I João 4:8)"),
  newFrase("Mil cairão ao teu lado; e dez mil à tua direita, mas tu não serás atingido.", "(Salmos 91:7)"),
+ newFrase("Direi do Senhor: Ele é o meu Deus, o meu Refúgio, a minha Fortaleza, e Nele confiarei.", "(Salmos 91:2)"),
  newFrase("Porque a loucura de Deus é mais sábia que a sabedoria humana, e a fraqueza de Deus é mais forte que a força do homem.", "(I Coríntios 1:25)"),
  newFrase("Bem-aventurados os pacificadores, pois serão chamados filhos de Deus.", "(Mateus 5:9)"),
  newFrase("Deus justo, que sondas a mente e o coração dos homens, dá fim à maldade dos ímpios e ao justo dá segurança.", "(Salmos 7:9)"),
- newFrase("Mas eu, quando estiver com medo, confiarei em ti. Em Deus, cuja palavra eu louvo, em Deus eu confio e não temerei. Que poderá fazer-me o simples mortal?", "(Salmos 56:3-4)"),
+ newFrase("Mas eu, quando estiver com medo, confiarei em Ti. Em Deus, cuja palavra eu louvo, em Deus eu confio e não temerei. Que poderá fazer-me o simples mortal?", "(Salmos 56:3-4)"),
  newFrase("Pois nada é impossível para Deus.", "(Lucas 1:37)"),
  newFrase("Sejam fortes e corajosos. Não tenham medo nem fiquem apavorados por causa delas, pois o Senhor, o seu Deus, vai com vocês; nunca os deixará, nunca os abandonará.", "Deuteronômio 31:6"),
  newFrase("Ora, a fé é a certeza daquilo que esperamos e a prova das coisas que não vemos.", "(Hebreus 11:1)"),
- newFrase("Deixo a paz a vocês; a minha paz dou a vocês. Não a dou como o mundo a dá. Não se perturbe o seu coração, nem tenham medo.", "(João 14:27)"),
+ newFrase("Deixo a paz a vocês; a Minha paz dou a vocês. Não a dou como o mundo a dá. Não se perturbe o seu coração, nem tenham medo.", "(João 14:27)"),
  newFrase("Todavia, Deus, que é rico em misericórdia, pelo grande amor com que nos amou, deu-nos vida com Cristo quando ainda estávamos mortos em transgressões - pela graça vocês são salvos.", "(Efésios 2:4-5)"),
- newFrase("No princípio era Aquele que é a Palavra. Ele estava com Deus e era Deus", "(João 1:1)"),
+ newFrase("No princípio era Aquele que é a Palavra. Ele estava com Deus e era Deus.", "(João 1:1)"),
  newFrase("Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas serão acrescentadas a vocês.", "(Mateus 6:33)"),
  newFrase("Sejam praticantes da Palavra, e não apenas ouvintes, enganando vocês mesmos.", "(Tiago 1:22)"),
  newFrase("Cada palavra de Deus é comprovadamente pura; Ele é um escudo para quem n'Ele se refugia.", "(Provérbios 30:5)"),
