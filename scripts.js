@@ -75,7 +75,7 @@ var frases = [
  newFrase("Deus justo, que sondas a mente e o coração dos homens, dá fim à maldade dos ímpios e ao justo dá segurança.", "(Salmos 7:9)"),
  newFrase("Mas eu, quando estiver com medo, confiarei em Ti. Em Deus, cuja palavra eu louvo, em Deus eu confio e não temerei. Que poderá fazer-me o simples mortal?", "(Salmos 56:3-4)"),
  newFrase("Pois nada é impossível para Deus.", "(Lucas 1:37)"),
- newFrase("Sejam fortes e corajosos. Não tenham medo nem fiquem apavorados por causa delas, pois o Senhor, o seu Deus, vai com vocês; nunca os deixará, nunca os abandonará.", "Deuteronômio 31:6"),
+ newFrase("Sejam fortes e corajosos. Não tenham medo nem fiquem apavorados por causa delas, pois o Senhor, o seu Deus, vai com vocês; nunca os deixará, nunca os abandonará.", "(Deuteronômio 31:6)"),
  newFrase("Ora, a fé é a certeza daquilo que esperamos e a prova das coisas que não vemos.", "(Hebreus 11:1)"),
  newFrase("Deixo a paz a vocês; a Minha paz dou a vocês. Não a dou como o mundo a dá. Não se perturbe o seu coração, nem tenham medo.", "(João 14:27)"),
  newFrase("Todavia, Deus, que é rico em misericórdia, pelo grande amor com que nos amou, deu-nos vida com Cristo quando ainda estávamos mortos em transgressões - pela graça vocês são salvos.", "(Efésios 2:4-5)"),
