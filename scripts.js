@@ -57,7 +57,7 @@ var frases = [
  newFrase("Ele é fiel em tudo o que faz.", "(Salmos 33:4)"),
  newFrase("Combati o bom combate, terminei a corrida e guardei a fé.", "(II Timóteo 4:7)"),
  newFrase("Bendito é o Rei de Israel!", "(João 12:13)"),
- newFrase("Aproveitem ao máximo todas as oportunidades.", "(Colossensses 4:5)"),
+ newFrase("Aproveitem ao máximo todas as oportunidades.", "(Colossenses 4:5)"),
  newFrase("O castigo que nos trouxe paz estava sobre Ele, e pelas Suas feridas fomos curados.", "(Isaías 53:5)"),
  newFrase("Espere no Senhor. Seja forte! Espere no Senhor.", "(Salmos 27:14)"),
  newFrase("O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha.", "(I Coríntios 13:4)"),
