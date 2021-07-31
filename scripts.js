@@ -10,6 +10,31 @@ const body = document.getElementsByTagName("body")[0];
 
 const divlinks = document.getElementsByClassName("link")[0];
 
+const box = document.getElementById("box");
+
+const enter = 13;
+
+function addKeyListeners() {
+   window.onkeydown = keydown;
+   window.onkeyup = keyup;
+}
+
+function keydown(e) {
+    if (e.keyCode === enter) {
+        let url = "https://duckduckgo.com/?q=" + box.value;
+        let encoded = encodeURI(url);
+        
+        // codificar o que o encodeURI não codifica
+        encoded = encoded.replace("#", "%23");
+        
+        window.open(encoded, "_self");
+    }
+}
+
+function keyup(e) {
+    
+}
+
 function time() {
     var d = new Date();
 
@@ -27,9 +52,10 @@ function time() {
     if (hnow >= 18)
      saudacao.innerHTML = "Boa noite, Boot.";
      
-     setTimeout(function () {time();}, 1000);
+     setTimeout(function () { time(); }, 1000);
 }
 
+addKeyListeners();
 time();
 
 // -- End Date --
@@ -138,8 +164,8 @@ let links = [
  //newLink("https://instagram.com", "Instagram", "Resources/Images/Icons/instagram.png"),
  //newLink("https://drive.google.com", "Google Drive", "Resources/Images/Icons/google-drive.png"),
  newLink("https://github.com", "GitHub", "Resources/Images/Icons/github.png"),
- newLink("https://classroom.google.com", "Google Classroom", "Resources/Images/Icons/classroom.png"),
- newLink("https://gmail.com", "Gmail", "Resources/Images/Icons/gmail.png"),
+ newLink("https://classroom.google.com", "Classroom", "Resources/Images/Icons/classroom.png"),
+ newLink("https://mail.google.com", "Gmail", "Resources/Images/Icons/gmail.png"),
  //newLink("https://facebook.com", "Facebook", "Resources/Images/Icons/facebook.png"),
  //newLink("https://messenger.com", "Messenger", "Resources/Images/Icons/messenger.png"),
  //newLink("https://web.whatsapp.com", "WhatsApp Web", "Resources/Images/Icons/whatsapp.png"),

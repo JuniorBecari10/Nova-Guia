@@ -120,6 +120,37 @@ h2, h3 {
  font-weight: normal;
 }
 
+.search {
+    margin: 10px 0;
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.search img {
+    display: inline-block;
+    
+    width: 50px;
+}
+
+.search input {
+    width: 83%;
+    
+    margin-left: 10px;
+    
+    border-radius: 5px;
+    
+    padding: 2px;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+::placeholder {
+    opacity: 1;
+}
+
 @media screen and (max-width: 950px) {
   .card {
     margin-top: 110px;
