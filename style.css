@@ -151,7 +151,7 @@ h2, h3 {
     opacity: 1;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1012px) {
   .card {
     margin-top: 110px;
     
