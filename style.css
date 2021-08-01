@@ -154,5 +154,7 @@ h2, h3 {
 @media screen and (max-width: 950px) {
   .card {
     margin-top: 110px;
+    
+    width: 95%;
   }
 }

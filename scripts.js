@@ -26,6 +26,7 @@ function keydown(e) {
         
         // codificar o que o encodeURI não codifica
         encoded = encoded.replace("#", "%23");
+        encoded = encoded.replace("&", "%26");
         
         window.open(encoded, "_self");
     }
@@ -105,13 +106,13 @@ var frases = [
  newFrase("Ora, a fé é o firme fundamento das coisas que se esperam e a prova das coisas que se não veem.", "(Hebreus 11:1)"),
  newFrase("Deixo a paz a vocês; a Minha paz dou a vocês. Não a dou como o mundo a dá. Não se perturbe o seu coração, nem tenham medo.", "(João 14:27)"),
  newFrase("Todavia, Deus, que é rico em misericórdia, pelo grande amor com que nos amou, deu-nos vida com Cristo quando ainda estávamos mortos em transgressões - pela graça vocês são salvos.", "(Efésios 2:4-5)"),
- newFrase("No princípio, era o Verbom e o Verbo estava com Deus, e o Verbo era Deus.", "(João 1:1)"),
+ newFrase("No princípio, era o Verbo e o Verbo estava com Deus, e o Verbo era Deus.", "(João 1:1)"),
  newFrase("Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas serão acrescentadas a vocês.", "(Mateus 6:33)"),
  newFrase("Sejam praticantes da Palavra, e não apenas ouvintes, enganando vocês mesmos.", "(Tiago 1:22)"),
  newFrase("Cada palavra de Deus é comprovadamente pura; Ele é um escudo para quem n'Ele se refugia.", "(Provérbios 30:5)"),
  newFrase("Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para todo aquele que Nele crê não pereça, mas tenha a vida eterna.","(João 3:16)"),
  newFrase("Mas Deus prova o seu amor para conosco em que Cristo morreu por nós, sendo nós ainda pecadores.","(Romanos 5:8)"),
- newFrase("O vinho é escarnecedor, e a bebida forte, alvoroçadora; e todo que neles errar nunca será sábio.","(Provérbios 20:1)"),
+ newFrase("O vinho é escarnecedor, e a bebida forte, alvoroçadora; e todo aquele que neles errar nunca será sábio.","(Provérbios 20:1)"),
  newFrase("Da soberba só provém a contenda, mas com os que se aconselham, se acha a sabedoria.","(Provérbios 13:10)"),
  newFrase("Não estejais inquietos por coisa alguma; antes, as vossas petições sejam em tudo conhecidas diante de Deus, pela oração e súplicas, com ação de graças.","(Filipenses 4:6)"),
  newFrase("Lança o teu pão sobre as águas, porque, depois de muitos dias, o acharás.","(Eclesiastes 11:1)")
