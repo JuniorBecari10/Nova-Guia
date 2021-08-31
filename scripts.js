@@ -14,6 +14,8 @@ const box = document.getElementById("box");
 
 const enter = 13;
 
+box.focus();
+
 function addKeyListeners() {
    window.onkeydown = keydown;
    window.onkeyup = keyup;
