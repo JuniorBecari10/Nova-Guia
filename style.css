@@ -1,8 +1,16 @@
 @font-face {
  font-family: "Pixel";
  
- src: url("Resources/Fonts/Pixel.woff");
+ src: url("Resources/Fonts/Pixell.ttf");
 }
+
+@font-face {
+ font-family: "p";
+ 
+ src: url("Resources/Fonts/p.ttf");
+}
+
+/*---------------------------------------------*/
 
 * {
  margin: 0;
@@ -15,6 +23,26 @@ body {
  background-image: url("Resources/Images/Backgrounds/1.jpg");
  background-size: cover;
  background-repeat: repeat-y;
+ 
+ line-height: 30px;
+}
+
+p.frase, p.autor {
+    font-family: "Pixel", sans-serif;
+}
+
+p.frase {
+    width: 90%;
+    
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+p.autor {
+    border-top: 1px solid black;
 }
 
 .link {
@@ -36,6 +64,7 @@ body {
  cursor: pointer;
  
  vertical-align: top;
+ line-height: 16px;
  
  background-color: rgba(100, 100, 100, 0.5);
  
@@ -63,6 +92,7 @@ body {
 
 .linknode img {
  width: 50px;
+ margin-bottom: 5px;
 }
 
 .card {
@@ -85,6 +115,7 @@ body {
 .hour {
  position: absolute;
  padding: 10px;
+ padding-top: 15px;
  
  text-align: center;
  
@@ -136,15 +167,19 @@ h2, h3 {
 }
 
 .search input {
-    width: 83%;
+    width: 43%; /*83*/
     
     margin-left: 10px;
     
     border-radius: 5px;
     
-    padding: 2px;
+    padding: 4px;
     
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.search input.site {
+    width: 50%;
 }
 
 ::placeholder {

@@ -11,6 +11,7 @@ const body = document.getElementsByTagName("body")[0];
 const divlinks = document.getElementsByClassName("link")[0];
 
 const box = document.getElementById("box");
+const site = document.getElementById("site");
 
 const enter = 13;
 
@@ -23,14 +24,29 @@ function addKeyListeners() {
 
 function keydown(e) {
     if (e.keyCode === enter) {
-        let url = "https://duckduckgo.com/?q=" + box.value;
-        let encoded = encodeURI(url);
+        if (box.value !== "" && box === document.activeElement) {
+            let url = "https://duckduckgo.com/?q=" + box.value;
+            let encoded = encodeURI(url);
+            
+            // codificar o que o encodeURI não codifica
+            encoded = encoded.replace("#", "%23");
+            encoded = encoded.replace("&", "%26");
+            
+            window.open(encoded, "_self");
+        }
         
-        // codificar o que o encodeURI não codifica
-        encoded = encoded.replace("#", "%23");
-        encoded = encoded.replace("&", "%26");
-        
-        window.open(encoded, "_self");
+        else if (site.value !== "" && site === document.activeElement) {
+            let url = "http://" + site.value;
+            let encoded = encodeURI(url);
+            
+            // codificar o que o encodeURI não codifica
+            encoded = encoded.replace("#", "%23");
+            encoded = encoded.replace("&", "%26");
+            
+            console.log(encoded);
+            
+            window.open(encoded, "_self");
+        }
     }
 }
 
@@ -171,7 +187,7 @@ let links = [
  newLink("https://mail.google.com", "Gmail", "Resources/Images/Icons/gmail.png"),
  //newLink("https://facebook.com", "Facebook", "Resources/Images/Icons/facebook.png"),
  //newLink("https://messenger.com", "Messenger", "Resources/Images/Icons/messenger.png"),
- //newLink("https://web.whatsapp.com", "WhatsApp Web", "Resources/Images/Icons/whatsapp.png"),
+ newLink("https://web.whatsapp.com", "WhatsApp Web", "Resources/Images/Icons/whatsapp.png"),
  //newLink("https://canva.com", "Canva", "Resources/Images/Icons/canva.png"),
 ];
 
