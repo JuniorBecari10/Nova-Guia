@@ -1,4 +1,4 @@
-const hour = document.getElementById("hour"); // Última Edição: 21/06/2021 - 17:57
+const hour = document.getElementById("hour"); // Última Edição: 15/11/2021- 10:06
 const date = document.getElementById("date");
 
 const saudacao = document.getElementById("saudacao");
@@ -6,7 +6,7 @@ const saudacao = document.getElementById("saudacao");
 const frase = document.getElementById("frase");
 const autor = document.getElementById("autor");
 
-const body = document.getElementsByTagName("body")[0];
+const html = document.getElementsByTagName("html")[0];
 
 const divlinks = document.getElementsByClassName("link")[0];
 
@@ -157,7 +157,7 @@ function random(num) {
 const numimgs = 12;
 let indeximg = random(numimgs) + 1;
 
-body.style.backgroundImage = "url(Resources/Images/Backgrounds/" + indeximg + ".jpg)";
+html.style.backgroundImage = "url(Resources/Images/Backgrounds/" + indeximg + ".jpg)";
 
 // -- End Images --
 
@@ -181,9 +181,9 @@ let links = [
  newLink("https://youtube.com", "YouTube", "Resources/Images/Icons/youtube.png"),
  newLink("https://cmspweb.ip.tv", "CMSP Web", "Resources/Images/Icons/cmsp.png"),
  //newLink("https://instagram.com", "Instagram", "Resources/Images/Icons/instagram.png"),
- //newLink("https://drive.google.com", "Google Drive", "Resources/Images/Icons/google-drive.png"),
  newLink("https://github.com", "GitHub", "Resources/Images/Icons/github.png"),
- newLink("https://classroom.google.com", "Classroom", "Resources/Images/Icons/classroom.png"),
+ //newLink("https://classroom.google.com", "Classroom", "Resources/Images/Icons/classroom.png"),
+ newLink("https://drive.google.com", "Google Drive", "Resources/Images/Icons/google-drive.png"),
  newLink("https://mail.google.com", "Gmail", "Resources/Images/Icons/gmail.png"),
  //newLink("https://facebook.com", "Facebook", "Resources/Images/Icons/facebook.png"),
  //newLink("https://messenger.com", "Messenger", "Resources/Images/Icons/messenger.png"),

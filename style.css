@@ -19,12 +19,14 @@
  font-family: "Pixel", sans-serif;
 }
 
-body {
- background-image: url("Resources/Images/Backgrounds/1.jpg");
- background-size: cover;
- background-repeat: repeat-y;
- 
- line-height: 30px;
+html {
+    background: url("Resources/Images/Backgrounds/1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    line-height: 30px;
 }
 
 p.frase, p.autor {
